@@ -75,10 +75,13 @@ def fill_text_box_with_data(webdriver, text_box_data: TextBoxData):
 
     response_full_name = text_box_page.response_full_name_text_element
     response_full_name_text = response_full_name.text
+
     response_email = text_box_page.email_text_element
     response_email_text = response_email.text
+
     response_current_address = text_box_page.response_current_address
     response_current_address_text = response_current_address.text
+
     response_permanent_address = text_box_page.response_permanent_address
     response_permanent_address_text = response_permanent_address.text
 
@@ -88,7 +91,7 @@ def fill_text_box_with_data(webdriver, text_box_data: TextBoxData):
     permanent_address_value = text_box_page.permanent_address_text_element.get_attribute('value')
 
 
-    assert f"Name:{full_name_value}" == response_full_name_text
+    assert fr"Name:{full_name_value}" == response_full_name_text
     assert f"Email:{email_value}" == response_email_text
     assert f"Current Address :{current_address_value}" == response_current_address_text
     assert f"Permananet Address :{permanent_address_value}" == response_permanent_address_text

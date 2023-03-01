@@ -38,8 +38,8 @@ class ListItemsElementsPage(BasePage):
 class TextBoxPage(BasePage):
     full_name_text_element = TextElement(By.XPATH, '//*[@id="userName"]')
     email_text_element = TextElement(By.XPATH,'//*[@id="userEmail"]')
-    current_address_text_element = TextElement(By.XPATH,'//*[@id="currentAddress"]')
-    permanent_address_text_element = TextElement(By.XPATH,'//*[@id="permanentAddress"]')
+    current_address_text_element = TextElement(By.XPATH,'/html/body/div[2]/div/div/div[2]/div[2]/div[2]/form/div[3]/div[2]/textarea')
+    permanent_address_text_element = TextElement(By.XPATH,'/html/body/div[2]/div/div/div[2]/div[2]/div[2]/form/div[4]/div[2]/textarea')
     submit_btn = ClickableElement(By.XPATH,'//*[@id="submit"]')
     response_full_name_text_element = TextElement(By.XPATH, '/html/body/div[2]/div/div/div[2]/div[2]/div[2]/form/div[6]/div/p[1]')
     response_email_text_element = TextElement(By.XPATH, '/html/body/div[2]/div/div/div[2]/div[2]/div[2]/form/div[6]/div/p[2]')
