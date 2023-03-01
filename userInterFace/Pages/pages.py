@@ -25,12 +25,24 @@ class ListsSectionPage(BasePage):
 
 
 class ListItemsElementsPage(BasePage):
-    tex_box_btn = ClickableElement(By.XPATH, '//*[@id="item-0"]')
-    check_box_btn = ClickableElement(By.XPATH,'//*[@id="item-1"]')
-    radio_button_btn = ClickableElement(By.XPATH, '//*[@id="item-2"]')
-    web_tables_btn = ClickableElement(By.XPATH,'//*[@id="item-3"]')
-    buttons_btn = ClickableElement(By.XPATH,'//*[@id="item-4"]')
-    links_btn = ClickableElement(By.XPATH, '//*[@id="item-5"]')
-    broken_links_btn = ClickableElement(By.XPATH, '//*[@id="item-6"]')
-    upload_download_btn = ClickableElement(By.XPATH, '//*[@id="item-7"]')
-    dynamic_btn = ClickableElement(By.XPATH, '//*[@id="item-8"]')
+    tex_box_btn = ClickableElement(By.XPATH, '/html/body/div[2]/div/div/div[2]/div[1]/div/div/div[1]/div/ul/li[1]')
+    check_box_btn = ClickableElement(By.XPATH,'/html/body/div[2]/div/div/div[2]/div[1]/div/div/div[1]/div/ul/li[2]')
+    radio_button_btn = ClickableElement(By.XPATH, '/html/body/div[2]/div/div/div[2]/div[1]/div/div/div[1]/div/ul/li[3]')
+    web_tables_btn = ClickableElement(By.XPATH,'/html/body/div[2]/div/div/div[2]/div[1]/div/div/div[1]/div/ul/li[4]')
+    buttons_btn = ClickableElement(By.XPATH,'/html/body/div[2]/div/div/div[2]/div[1]/div/div/div[1]/div/ul/li[5]')
+    links_btn = ClickableElement(By.XPATH, '/html/body/div[2]/div/div/div[2]/div[1]/div/div/div[1]/div/ul/li[6]')
+    broken_links_btn = ClickableElement(By.XPATH, '/html/body/div[2]/div/div/div[2]/div[1]/div/div/div[1]/div/ul/li[7]')
+    upload_download_btn = ClickableElement(By.XPATH, '/html/body/div[2]/div/div/div[2]/div[1]/div/div/div[1]/div/ul/li[8]')
+    dynamic_btn = ClickableElement(By.XPATH, '/html/body/div[2]/div/div/div[2]/div[1]/div/div/div[1]/div/ul/li[9]')
+
+class TextBoxPage(BasePage):
+    full_name_text_element = TextElement(By.XPATH, '//*[@id="userName"]')
+    email_text_element = TextElement(By.XPATH,'//*[@id="userEmail"]')
+    current_address_text_element = TextElement(By.XPATH,'//*[@id="currentAddress"]')
+    permanent_address_text_element = TextElement(By.XPATH,'//*[@id="permanentAddress"]')
+    submit_btn = ClickableElement(By.XPATH,'//*[@id="submit"]')
+    response_full_name_text_element = TextElement(By.XPATH, '/html/body/div[2]/div/div/div[2]/div[2]/div[2]/form/div[6]/div/p[1]')
+    response_email_text_element = TextElement(By.XPATH, '/html/body/div[2]/div/div/div[2]/div[2]/div[2]/form/div[6]/div/p[2]')
+    response_current_address = TextElement(By.XPATH, '/html/body/div[2]/div/div/div[2]/div[2]/div[2]/form/div[6]/div/p[3]')
+    response_permanent_address = TextElement(By.XPATH, '/html/body/div[2]/div/div/div[2]/div[2]/div[2]/form/div[6]/div/p[4]')
+
