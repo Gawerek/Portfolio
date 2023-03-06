@@ -14,7 +14,7 @@ You also need to have a web browser installed. The tests have been designed to w
 To run the tests, clone this repository to your local machine, navigate to the project directory, and run the following command in your terminal:
 
 ```
-pytest
+pytest  -s --webdriver-path=your_path --no-headless 
 ```
 
 This will execute all the tests in the project.
