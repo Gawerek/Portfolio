@@ -24,6 +24,7 @@ def test_elements_text_box(webdriver):
     this_text_box_data = TextBoxData(full_name=text_box_dict["full_name"], current_address=text_box_dict["current_address"], \
                                      email=text_box_dict["email"], permanent_address=text_box_dict["permanent_address"])
     fill_text_box_with_data(webdriver, this_text_box_data)
+    print(this_text_box_data.__dict__)
 
 
 

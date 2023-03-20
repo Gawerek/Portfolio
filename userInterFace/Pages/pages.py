@@ -42,7 +42,7 @@ class TextBoxPage(BasePage):
     permanent_address_text_element = TextElement(By.XPATH,'/html/body/div[2]/div/div/div[2]/div[2]/div[2]/form/div[4]/div[2]/textarea')
     submit_btn = ClickableElement(By.XPATH,'//*[@id="submit"]')
     response_full_name_text_element = TextElement(By.XPATH, '/html/body/div[2]/div/div/div[2]/div[2]/div[2]/form/div[6]/div/p[1]')
-    response_email_text_element = TextElement(By.XPATH, '/html/body/div[2]/div/div/div[2]/div[2]/div[2]/form/div[6]/div/p[2]')
+    response_email_text_element = TextElement(By.XPATH, '//*[@id="email"]')
     response_current_address = TextElement(By.XPATH, '/html/body/div[2]/div/div/div[2]/div[2]/div[2]/form/div[6]/div/p[3]')
     response_permanent_address = TextElement(By.XPATH, '/html/body/div[2]/div/div/div[2]/div[2]/div[2]/form/div[6]/div/p[4]')
 
